@@ -19,6 +19,6 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ConvivaReplay",
-            path: "Framework/ConvivaReplay.xcframework.zip"
+            path: "Framework/ConvivaReplay.xcframework.zip")
     ]
 )
