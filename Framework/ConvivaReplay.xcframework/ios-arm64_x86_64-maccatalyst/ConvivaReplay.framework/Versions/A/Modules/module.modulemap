@@ -1,0 +1,11 @@
+framework module ConvivaReplay {
+  umbrella header "ConvivaReplay-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module ConvivaReplay.Swift {
+  header "ConvivaReplay-Swift.h"
+  requires objc
+}

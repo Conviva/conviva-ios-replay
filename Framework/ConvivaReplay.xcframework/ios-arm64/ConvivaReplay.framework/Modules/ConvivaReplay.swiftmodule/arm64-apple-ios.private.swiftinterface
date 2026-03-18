@@ -1,0 +1,648 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ConvivaReplay
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+import Accelerate
+@_exported import ConvivaReplay
+import CoreGraphics
+import Foundation
+import PhotosUI
+import QuartzCore
+import Swift
+import SwiftUI
+import SystemConfiguration
+import UIKit
+import WebKit
+import _Concurrency
+import _PhotosUI_SwiftUI
+import _StringProcessing
+import _SwiftConcurrencyShims
+import zlib
+@objc(ConvivaReplayQuality) public enum ConvivaReplayQuality : Swift.Int {
+  case low
+  case medium
+  case high
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct ConvivaReplayConfig {
+  public var enabled: Swift.Bool
+  public var logging: Swift.Bool
+  public var clid: Swift.String
+  public var apiKey: Swift.String
+  public var host: Swift.String
+  public enum Constants {
+    public static let defaultHost: Swift.String
+  }
+  public struct Sampling {
+    public var pct: Swift.Double
+    public init(pct: Swift.Int = 100)
+    public init(proportion: Swift.Double)
+  }
+  public var sampling: ConvivaReplay.ConvivaReplayConfig.Sampling
+  public struct EmitterConfiguration {
+    public var uploadInterval: Foundation.TimeInterval
+    public var policyExpiryTime: Swift.Int?
+    public var maxQueueSize: Swift.Int
+    public var flushAt: Swift.Int
+    public var maxBatchSize: Swift.Int
+    public enum DataMode : Swift.String {
+      case wifi
+      case any
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public var dataMode: ConvivaReplay.ConvivaReplayConfig.EmitterConfiguration.DataMode
+    public init(uploadInterval: Foundation.TimeInterval = 60, policyExpiryTime: Swift.Int? = 3600, maxQueueSize: Swift.Int = 1000, flushAt: Swift.Int = 120, maxBatchSize: Swift.Int = 120, dataMode: ConvivaReplay.ConvivaReplayConfig.EmitterConfiguration.DataMode = .wifi)
+  }
+  public var emitterConfiguration: ConvivaReplay.ConvivaReplayConfig.EmitterConfiguration
+  public struct MobRecorderConfiguration {
+    public var throttleDelayMs: Swift.Int
+    public var compressionQuality: Swift.Int
+    public var quality: ConvivaReplay.ConvivaReplayQuality
+    public var maskAllInputs: Swift.Bool
+    public var maskInputOptions: [Swift.String]
+    public var maskAllImages: Swift.Bool
+    public var maskSandboxedSystemViews: Swift.Bool
+    public var useFastRenderer: Swift.Bool
+    public init(throttleDelayMs: Swift.Int = 1000, compressionQuality: Swift.Int = 10, quality: ConvivaReplay.ConvivaReplayQuality = .medium, maskAllInputs: Swift.Bool = true, maskInputOptions: [Swift.String] = [
+                "newPassword", "oneTimeCode", "creditCardNumber",
+                "telephoneNumber", "emailAddress", "password",
+                "username", "URL", "name", "nickname",
+                "middleName", "familyName", "nameSuffix",
+                "namePrefix", "organizationName", "location",
+                "fullStreetAddress", "streetAddressLine1",
+                "streetAddressLine2", "addressCity", "addressState",
+                "addressCityAndState", "postalCode"
+                ], maskAllImages: Swift.Bool = true, maskSandboxedSystemViews: Swift.Bool = true, useFastRenderer: Swift.Bool = false)
+  }
+  public var mobRecorderConfiguration: ConvivaReplay.ConvivaReplayConfig.MobRecorderConfiguration
+  public var maskAllTextInputs: Swift.Bool {
+    get
+    set
+  }
+  public var maskAllImages: Swift.Bool {
+    get
+    set
+  }
+  public var maskSandboxedSystemViews: Swift.Bool {
+    get
+    set
+  }
+  public var throttleDelay: Foundation.TimeInterval {
+    get
+    set
+  }
+  public var maskInputOptions: [Swift.String] {
+    get
+    set
+  }
+  public init(enabled: Swift.Bool = false, apiKey: Swift.String, clid: Swift.String, host: Swift.String = Constants.defaultHost, sampling: ConvivaReplay.ConvivaReplayConfig.Sampling = .init(pct: 100), emitterConfiguration: ConvivaReplay.ConvivaReplayConfig.EmitterConfiguration = .init(uploadInterval: 60, policyExpiryTime: 3600), mobRecorderConfiguration: ConvivaReplay.ConvivaReplayConfig.MobRecorderConfiguration = .init())
+  public init(dictionary: [Swift.String : Any], apiKey: Swift.String, clid: Swift.String)
+}
+
+@_hasMissingDesignatedInitializers @objc public class ConvivaReplayDisplaySurvey : ObjectiveC.NSObject, Swift.Identifiable {
+  final public let id: Swift.String
+  final public let name: Swift.String
+  final public let questions: [ConvivaReplay.ConvivaReplayDisplaySurveyQuestion]
+  final public let appearance: ConvivaReplay.ConvivaReplayDisplaySurveyAppearance?
+  final public let startDate: Foundation.Date?
+  final public let endDate: Foundation.Date?
+  public typealias ID = Swift.String
+  @objc deinit
+}
+@objc public enum ConvivaReplayDisplaySurveyRatingType : Swift.Int {
+  case number
+  case emoji
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum ConvivaReplayDisplaySurveyTextContentType : Swift.Int {
+  case html
+  case text
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class ConvivaReplayDisplaySurveyAppearance : ObjectiveC.NSObject {
+  final public let fontFamily: Swift.String?
+  final public let backgroundColor: Swift.String?
+  final public let borderColor: Swift.String?
+  final public let submitButtonColor: Swift.String?
+  final public let submitButtonText: Swift.String?
+  final public let submitButtonTextColor: Swift.String?
+  final public let descriptionTextColor: Swift.String?
+  final public let ratingButtonColor: Swift.String?
+  final public let ratingButtonActiveColor: Swift.String?
+  final public let placeholder: Swift.String?
+  final public let displayThankYouMessage: Swift.Bool
+  final public let thankYouMessageHeader: Swift.String?
+  final public let thankYouMessageDescription: Swift.String?
+  final public let thankYouMessageDescriptionContentType: ConvivaReplay.ConvivaReplayDisplaySurveyTextContentType?
+  final public let thankYouMessageCloseButtonText: Swift.String?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class ConvivaReplayDisplaySurveyQuestion : ObjectiveC.NSObject {
+  @objc final public let id: Swift.String
+  @objc final public let question: Swift.String
+  @objc final public let questionDescription: Swift.String?
+  @objc final public let questionDescriptionContentType: ConvivaReplay.ConvivaReplayDisplaySurveyTextContentType
+  @objc final public let isOptional: Swift.Bool
+  @objc final public let buttonText: Swift.String?
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class ConvivaReplayDisplayOpenQuestion : ConvivaReplay.ConvivaReplayDisplaySurveyQuestion {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class ConvivaReplayDisplayLinkQuestion : ConvivaReplay.ConvivaReplayDisplaySurveyQuestion {
+  final public let link: Swift.String?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class ConvivaReplayDisplayRatingQuestion : ConvivaReplay.ConvivaReplayDisplaySurveyQuestion {
+  final public let ratingType: ConvivaReplay.ConvivaReplayDisplaySurveyRatingType
+  final public let scaleLowerBound: Swift.Int
+  final public let scaleUpperBound: Swift.Int
+  final public let lowerBoundLabel: Swift.String
+  final public let upperBoundLabel: Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class ConvivaReplayDisplayChoiceQuestion : ConvivaReplay.ConvivaReplayDisplaySurveyQuestion {
+  final public let choices: [Swift.String]
+  final public let hasOpenChoice: Swift.Bool
+  final public let shuffleOptions: Swift.Bool
+  final public let isMultipleChoice: Swift.Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(ConvivaReplayEvent) public class ConvivaReplayEvent : ObjectiveC.NSObject {
+  @objc public var event: Swift.String
+  @objc public var distinctId: Swift.String
+  @objc public var properties: [Swift.String : Any]
+  @objc public var timestamp: Foundation.Date
+  @objc public var uuid: Foundation.UUID {
+    get
+  }
+  @objc deinit
+}
+extension ConvivaReplay.ConvivaReplayPHSDK {
+  @objc public static let didStartNotification: Foundation.Notification.Name
+  @objc public static let didStopNotification: Foundation.Notification.Name
+  @objc public static let didReceiveFeatureFlags: Foundation.Notification.Name
+}
+@objc public class ConvivaReplayLogEntry : ObjectiveC.NSObject {
+  @objc final public let level: ConvivaReplay.ConvivaReplayLogLevel
+  @objc final public let message: Swift.String
+  @objc public init(level: ConvivaReplay.ConvivaReplayLogLevel, message: Swift.String)
+  @objc deinit
+}
+@objc public enum ConvivaReplayLogLevel : Swift.Int {
+  case info
+  case warn
+  case error
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class ConvivaReplayMgr : ObjectiveC.NSObject {
+  @objc public static let shared: ConvivaReplay.ConvivaReplayMgr
+  @objc public static let notifStart: Foundation.Notification.Name
+  @objc public static let notifStop: Foundation.Notification.Name
+  @objc public static let notifConfigDidChange: Foundation.Notification.Name
+  @objc public static func bootstrap()
+  @objc deinit
+}
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func convivaReplayMask(_ isEnabled: Swift.Bool = true) -> some SwiftUICore.View
+  
+}
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func convivaReplayNoMask() -> some SwiftUICore.View
+  
+}
+@objc(ConvivaReplayPersonProfiles) public enum ConvivaReplayPersonProfiles : Swift.Int {
+  case never
+  case always
+  case identifiedOnly
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public typealias BeforeSendBlock = (ConvivaReplay.ConvivaReplayEvent) -> ConvivaReplay.ConvivaReplayEvent?
+@objc final public class BoxedBeforeSendBlock : ObjectiveC.NSObject {
+  @objc final public let block: ConvivaReplay.BeforeSendBlock
+  @objc(block:) public init(block: @escaping ConvivaReplay.BeforeSendBlock)
+  @objc deinit
+}
+@objc(ConvivaReplayPHConfig) public class ConvivaReplayPHConfig : ObjectiveC.NSObject {
+  @objc(ConvivaReplayDataMode) public enum ConvivaReplayDataMode : Swift.Int {
+    case wifi
+    case any
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public typealias SnapshotUploader = @Sendable (_ gzippedPayload: Foundation.Data, _ config: ConvivaReplay.ConvivaReplayPHConfig, _ firstEventDate: Foundation.Date) async throws -> Swift.Int
+  @objc final public let host: Foundation.URL
+  @objc final public let apiKey: Swift.String
+  @objc public var flushAt: Swift.Int
+  @objc public var maxQueueSize: Swift.Int
+  @objc public var maxBatchSize: Swift.Int
+  @objc public var flushIntervalSeconds: Foundation.TimeInterval
+  @objc public var dataMode: ConvivaReplay.ConvivaReplayPHConfig.ConvivaReplayDataMode
+  @objc public var sendFeatureFlagEvent: Swift.Bool
+  @objc public var preloadFeatureFlags: Swift.Bool
+  @objc public var remoteConfig: Swift.Bool
+  @objc public var captureApplicationLifecycleEvents: Swift.Bool
+  @objc public var captureScreenViews: Swift.Bool
+  @objc public var enableSwizzling: Swift.Bool
+  @objc public var captureElementInteractions: Swift.Bool
+  @objc public var debug: Swift.Bool
+  @objc public var optOut: Swift.Bool
+  @objc public var getAnonymousId: (_ uuid: Foundation.UUID) -> Foundation.UUID
+  @objc public var reuseAnonymousId: Swift.Bool
+  @available(*, deprecated, message: "Use beforeSend instead")
+  @objc public var propertiesSanitizer: (any ConvivaReplay.ConvivaReplayPropertiesSanitizer)?
+  @objc public var personProfiles: ConvivaReplay.ConvivaReplayPersonProfiles
+  @objc public var setDefaultPersonProperties: Swift.Bool
+  @objc public var evaluationEnvironments: [Swift.String]?
+  @objc public var appGroupIdentifier: Swift.String?
+  public var snapshotUploader: ConvivaReplay.ConvivaReplayPHConfig.SnapshotUploader?
+  @objc public var snapshotEndpoint: Swift.String
+  public static let defaultHost: Swift.String
+  @objc public var sessionReplay: Swift.Bool
+  @objc final public let sessionReplayConfig: ConvivaReplay.ConvivaReplaySessionReplayConfig
+  @available(iOS 15.0, *)
+  @available(watchOS, unavailable, message: "Surveys are only available on iOS 15+")
+  @available(macOS, unavailable, message: "Surveys are only available on iOS 15+")
+  @available(tvOS, unavailable, message: "Surveys are only available on iOS 15+")
+  @available(visionOS, unavailable, message: "Surveys are only available on iOS 15+")
+  @objc public var surveys: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @available(iOS 15.0, *)
+  @available(watchOS, unavailable, message: "Surveys are only available on iOS 15+")
+  @available(macOS, unavailable, message: "Surveys are only available on iOS 15+")
+  @available(tvOS, unavailable, message: "Surveys are only available on iOS 15+")
+  @available(visionOS, unavailable, message: "Surveys are only available on iOS 15+")
+  @objc public var surveysConfig: ConvivaReplay.ConvivaReplaySurveysConfig {
+    @objc get
+    @objc set
+  }
+  public var storageManager: ConvivaReplay.ConvivaReplayStorageManager?
+  @objc(apiKey:) public init(apiKey: Swift.String)
+  @objc(apiKey:host:) public init(apiKey: Swift.String, host: Swift.String = defaultHost)
+  public func setBeforeSend(_ blocks: [ConvivaReplay.BeforeSendBlock])
+  public func setBeforeSend(_ blocks: ConvivaReplay.BeforeSendBlock...)
+  @available(*, unavailable, message: "Use setBeforeSend(_ blocks: BeforeSendBlock...) instead")
+  @objc public func setBeforeSend(_ blocks: [ConvivaReplay.BoxedBeforeSendBlock])
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class ConvivaReplayPHNextSurveyQuestion : ObjectiveC.NSObject {
+  final public let questionIndex: Swift.Int
+  final public let isSurveyCompleted: Swift.Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class ConvivaReplayPHSDK : ObjectiveC.NSObject {
+  @objc nonisolated(unsafe) public static let shared: ConvivaReplay.ConvivaReplayPHSDK
+  @objc deinit
+  @objc public func debug(_ enabled: Swift.Bool = true)
+  @objc public func setup(_ config: ConvivaReplay.ConvivaReplayPHConfig)
+  @objc public func getDistinctId() -> Swift.String
+  @objc public func getAnonymousId() -> Swift.String
+  @objc public func getSessionId() -> Swift.String?
+  @objc public func startSession()
+  @objc public func endSession()
+  @objc public func flush()
+  @objc public func reset()
+  @objc(registerProperties:) public func register(_ properties: [Swift.String : Any])
+  @objc(unregisterProperties:) public func unregister(_ key: Swift.String)
+  @objc public func identify(_ distinctId: Swift.String)
+  @objc(identifyWithDistinctId:userProperties:) public func identify(_ distinctId: Swift.String, userProperties: [Swift.String : Any]? = nil)
+  @objc(identifyWithDistinctId:userProperties:userPropertiesSetOnce:) public func identify(_ distinctId: Swift.String, userProperties: [Swift.String : Any]? = nil, userPropertiesSetOnce: [Swift.String : Any]? = nil)
+  @objc public func capture(_ event: Swift.String)
+  @objc(captureWithEvent:properties:) public func capture(_ event: Swift.String, properties: [Swift.String : Any]? = nil)
+  @objc(captureWithEvent:properties:userProperties:) public func capture(_ event: Swift.String, properties: [Swift.String : Any]? = nil, userProperties: [Swift.String : Any]? = nil)
+  @objc(captureWithEvent:properties:userProperties:userPropertiesSetOnce:) public func capture(_ event: Swift.String, properties: [Swift.String : Any]? = nil, userProperties: [Swift.String : Any]? = nil, userPropertiesSetOnce: [Swift.String : Any]? = nil)
+  @objc(captureWithEvent:properties:userProperties:userPropertiesSetOnce:groups:) public func capture(_ event: Swift.String, properties: [Swift.String : Any]? = nil, userProperties: [Swift.String : Any]? = nil, userPropertiesSetOnce: [Swift.String : Any]? = nil, groups: [Swift.String : Swift.String]? = nil)
+  @objc(captureWithEvent:distinctId:properties:userProperties:userPropertiesSetOnce:groups:) public func capture(_ event: Swift.String, distinctId: Swift.String? = nil, properties: [Swift.String : Any]? = nil, userProperties: [Swift.String : Any]? = nil, userPropertiesSetOnce: [Swift.String : Any]? = nil, groups: [Swift.String : Swift.String]? = nil)
+  @objc(captureWithEvent:distinctId:properties:userProperties:userPropertiesSetOnce:groups:timestamp:) public func capture(_ event: Swift.String, distinctId: Swift.String? = nil, properties: [Swift.String : Any]? = nil, userProperties: [Swift.String : Any]? = nil, userPropertiesSetOnce: [Swift.String : Any]? = nil, groups: [Swift.String : Swift.String]? = nil, timestamp: Foundation.Date? = nil)
+  @objc public func screen(_ screenTitle: Swift.String)
+  @objc(screenWithTitle:properties:) public func screen(_ screenTitle: Swift.String, properties: [Swift.String : Any]? = nil)
+  @objc public func alias(_ alias: Swift.String)
+  @objc(groupWithType:key:) public func group(type: Swift.String, key: Swift.String)
+  @objc(groupWithType:key:groupProperties:) public func group(type: Swift.String, key: Swift.String, groupProperties: [Swift.String : Any]? = nil)
+  @objc public func setPersonPropertiesForFlags(_ properties: [Swift.String : Any])
+  @objc(setPersonPropertiesForFlagsWithProperties:reloadFeatureFlags:) public func setPersonPropertiesForFlags(_ properties: [Swift.String : Any], reloadFeatureFlags: Swift.Bool = true)
+  @objc public func resetPersonPropertiesForFlags()
+  @objc(resetPersonPropertiesForFlagsWithReloadFeatureFlags:) public func resetPersonPropertiesForFlags(reloadFeatureFlags: Swift.Bool = true)
+  @objc(setGroupPropertiesForFlags:properties:) public func setGroupPropertiesForFlags(_ groupType: Swift.String, properties: [Swift.String : Any])
+  @objc(setGroupPropertiesForFlags:properties:reloadFeatureFlags:) public func setGroupPropertiesForFlags(_ groupType: Swift.String, properties: [Swift.String : Any], reloadFeatureFlags: Swift.Bool = true)
+  @objc public func resetGroupPropertiesForFlags()
+  @objc(resetGroupPropertiesForFlagsWithReloadFeatureFlags:) public func resetGroupPropertiesForFlags(reloadFeatureFlags: Swift.Bool = true)
+  @objc(resetGroupPropertiesForFlagsWithGroupType:) public func resetGroupPropertiesForFlags(_ groupType: Swift.String)
+  @objc(resetGroupPropertiesForFlagsWithGroupType:reloadFeatureFlags:) public func resetGroupPropertiesForFlags(_ groupType: Swift.String, reloadFeatureFlags: Swift.Bool = true)
+  @objc public func reloadFeatureFlags()
+  @objc(reloadFeatureFlagsWithCallback:) public func reloadFeatureFlags(_ callback: @escaping () -> Swift.Void)
+  @objc public func getFeatureFlag(_ key: Swift.String) -> Any?
+  @objc public func isFeatureEnabled(_ key: Swift.String) -> Swift.Bool
+  @objc public func getFeatureFlagPayload(_ key: Swift.String) -> Any?
+  @objc public func optIn()
+  @objc public func optOut()
+  @objc public func isOptOut() -> Swift.Bool
+  @objc public func close()
+  @objc(startSessionRecording) public func startSessionRecording()
+  @objc(startSessionRecordingWithResumeCurrent:) public func startSessionRecording(resumeCurrent: Swift.Bool)
+  @objc public func stopSessionRecording()
+  @objc public static func with(_ config: ConvivaReplay.ConvivaReplayPHConfig) -> ConvivaReplay.ConvivaReplayPHSDK
+  @objc public func isSessionReplayActive() -> Swift.Bool
+  @objc public func isAutocaptureActive() -> Swift.Bool
+}
+@objc(ConvivaReplayPropertiesSanitizer) public protocol ConvivaReplayPropertiesSanitizer {
+  @objc func sanitize(_ properties: [Swift.String : Any]) -> [Swift.String : Any]
+}
+
+public enum ConvivaReplayReachabilityError : Swift.Error {
+  case failedToCreateWithAddress(Darwin.sockaddr, Swift.Int32)
+  case failedToCreateWithHostname(Swift.String, Swift.Int32)
+  case unableToSetCallback(Swift.Int32)
+  case unableToSetDispatchQueue(Swift.Int32)
+  case unableToGetFlags(Swift.Int32)
+}
+@available(*, unavailable, renamed: "Notification.Name.reachabilityChanged")
+public let ReachabilityChangedNotification: Foundation.NSNotification.Name
+public class ConvivaReplayReachability {
+  public typealias NetworkReachable = (ConvivaReplay.ConvivaReplayReachability) -> Swift.Void
+  public typealias NetworkUnreachable = (ConvivaReplay.ConvivaReplayReachability) -> Swift.Void
+  @available(*, unavailable, renamed: "Connection")
+  public enum NetworkStatus : Swift.CustomStringConvertible {
+    case notReachable, reachableViaWiFi, reachableViaWWAN
+    public var description: Swift.String {
+      get
+    }
+    public static func == (a: ConvivaReplay.ConvivaReplayReachability.NetworkStatus, b: ConvivaReplay.ConvivaReplayReachability.NetworkStatus) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Connection : Swift.CustomStringConvertible {
+    case unavailable, wifi, cellular
+    public var description: Swift.String {
+      get
+    }
+    @available(*, deprecated, renamed: "unavailable")
+    public static let none: ConvivaReplay.ConvivaReplayReachability.Connection
+    public static func == (a: ConvivaReplay.ConvivaReplayReachability.Connection, b: ConvivaReplay.ConvivaReplayReachability.Connection) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var whenReachable: ConvivaReplay.ConvivaReplayReachability.NetworkReachable?
+  public var whenUnreachable: ConvivaReplay.ConvivaReplayReachability.NetworkUnreachable?
+  @available(*, deprecated, renamed: "allowsCellularConnection")
+  final public let reachableOnWWAN: Swift.Bool
+  public var allowsCellularConnection: Swift.Bool
+  public var notificationCenter: Foundation.NotificationCenter
+  @available(*, deprecated, renamed: "connection.description")
+  public var currentReachabilityString: Swift.String {
+    get
+  }
+  @available(*, unavailable, renamed: "connection")
+  public var currentReachabilityStatus: ConvivaReplay.ConvivaReplayReachability.Connection {
+    get
+  }
+  public var connection: ConvivaReplay.ConvivaReplayReachability.Connection {
+    get
+  }
+  required public init(reachabilityRef: SystemConfiguration.SCNetworkReachability, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main)
+  convenience public init(hostname: Swift.String, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
+  convenience public init(queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
+  @objc deinit
+}
+@propertyWrapper final public class ConvivaReplayReadWriteLock<Value> {
+  public init(wrappedValue value: Value)
+  @objc deinit
+  final public var wrappedValue: Value {
+    get
+    set
+  }
+  @discardableResult
+  final public func mutate<T>(_ closure: (inout Value) -> T) -> T
+}
+
+@objc final public class ConvivaReplaySDK : ObjectiveC.NSObject {
+  public init(_ config: ConvivaReplay.ConvivaReplayConfig)
+  @objc final public func start()
+  @objc final public func stop()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class ConvivaReplaySessionManager : ObjectiveC.NSObject {
+  @objc public static var shared: ConvivaReplay.ConvivaReplaySessionManager {
+    @objc get
+  }
+  @objc public func setSessionId(_ sessionId: Swift.String)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(ConvivaReplaySessionReplayConfig) public class ConvivaReplaySessionReplayConfig : ObjectiveC.NSObject {
+  @objc public var maskAllTextInputs: Swift.Bool
+  @objc public var maskAllImages: Swift.Bool
+  @objc public var maskAllSandboxedViews: Swift.Bool
+  @available(*, deprecated, message: "This property has no effect and will be removed in the next major release. To learn how to manually mask user photos please see our Privacy controls documentation: https://posthog.com/docs/session-replay/privacy?tab=iOS")
+  @objc public var maskPhotoLibraryImages: Swift.Bool
+  @objc public var captureNetworkTelemetry: Swift.Bool
+  @objc public var screenshotMode: Swift.Bool
+  @available(*, deprecated, message: "Deprecated in favor of 'throttleDelay' which provides identical functionality. Will be removed in the next major release.")
+  @objc public var debouncerDelay: Foundation.TimeInterval {
+    @objc get
+    @objc set
+  }
+  @objc public var throttleDelay: Swift.Double
+  @objc public var captureLogs: Swift.Bool
+  @objc public var captureLogsConfig: ConvivaReplay.ConvivaReplaySessionReplayConsoleLogConfig
+  @objc public var screenshotQuality: ConvivaReplay.ConvivaReplayQuality
+  @objc public var useFastRenderer: Swift.Bool
+  @objc public var compressionQuality: Swift.Int
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class ConvivaReplaySessionReplayConsoleLogConfig : ObjectiveC.NSObject {
+  @objc public var logSanitizer: (Swift.String) -> ConvivaReplay.ConvivaReplayLogEntry?
+  @objc public var minLogLevel: ConvivaReplay.ConvivaReplayLogLevel
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ConvivaReplayStorageManager {
+  public func getAnonymousId() -> Swift.String
+  public func setAnonymousId(_ id: Swift.String)
+  public func getDistinctId() -> Swift.String
+  public func setDistinctId(_ id: Swift.String)
+  public func isIdentified() -> Swift.Bool
+  public func setIdentified(_ isIdentified: Swift.Bool)
+  public func isPersonProcessing() -> Swift.Bool
+  public func setPersonProcessing(_ enable: Swift.Bool)
+  public func reset(keepAnonymousId: Swift.Bool = false, _ resetStorage: Swift.Bool = false)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @objcMembers public class ConvivaReplaySurveyResponse : ObjectiveC.NSObject {
+  @objc final public let type: ConvivaReplay.ConvivaReplaySurveyResponseType
+  final public let linkClicked: Swift.Bool?
+  final public let ratingValue: Swift.Int?
+  @objc final public let textValue: Swift.String?
+  @objc final public let selectedOptions: [Swift.String]?
+  @objc public static func link(_ clicked: Swift.Bool) -> ConvivaReplay.ConvivaReplaySurveyResponse
+  public static func rating(_ rating: Swift.Int?) -> ConvivaReplay.ConvivaReplaySurveyResponse
+  @objc public static func openEnded(_ openEnded: Swift.String?) -> ConvivaReplay.ConvivaReplaySurveyResponse
+  @objc public static func singleChoice(_ singleChoice: Swift.String?) -> ConvivaReplay.ConvivaReplaySurveyResponse
+  @objc public static func multipleChoice(_ multipleChoice: [Swift.String]?) -> ConvivaReplay.ConvivaReplaySurveyResponse
+  @objc deinit
+}
+@objc public enum ConvivaReplaySurveyResponseType : Swift.Int {
+  case link
+  case rating
+  case openEnded
+  case singleChoice
+  case multipleChoice
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class ConvivaReplaySurveysConfig : ObjectiveC.NSObject {
+  public var surveysDelegate: any ConvivaReplay.ConvivaReplaySurveysDelegate
+  @objc override dynamic public init()
+  @objc deinit
+}
+public typealias OnConvivaReplaySurveyShown = (_ survey: ConvivaReplay.ConvivaReplayDisplaySurvey) -> Swift.Void
+public typealias OnConvivaReplaySurveyResponse = (_ survey: ConvivaReplay.ConvivaReplayDisplaySurvey, _ index: Swift.Int, _ response: ConvivaReplay.ConvivaReplaySurveyResponse) -> ConvivaReplay.ConvivaReplayPHNextSurveyQuestion?
+public typealias OnConvivaReplaySurveyClosed = (_ survey: ConvivaReplay.ConvivaReplayDisplaySurvey) -> Swift.Void
+@objc public protocol ConvivaReplaySurveysDelegate {
+  @objc func renderSurvey(_ survey: ConvivaReplay.ConvivaReplayDisplaySurvey, onSurveyShown: @escaping ConvivaReplay.OnConvivaReplaySurveyShown, onSurveyResponse: @escaping ConvivaReplay.OnConvivaReplaySurveyResponse, onSurveyClosed: @escaping ConvivaReplay.OnConvivaReplaySurveyClosed)
+  @objc func cleanupSurveys()
+}
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func convivaReplayScreenView(_ screenName: Swift.String? = nil, _ properties: [Swift.String : Any]? = nil, convivaReplay: ConvivaReplay.ConvivaReplayPHSDK? = nil) -> some SwiftUICore.View
+  
+  @_Concurrency.MainActor @preconcurrency public func convivaReplayViewSeen(_ event: Swift.String, _ properties: [Swift.String : Any]? = nil, convivaReplay: ConvivaReplay.ConvivaReplayPHSDK? = nil) -> some SwiftUICore.View
+  
+}
+public var convivaReplayVersion: Swift.String
+public let convivaReplayiOSSdkName: Swift.String
+public var convivaReplaySdkName: Swift.String
+public enum ConvivaReplayGzip {
+  public static let maxWindowBits: Swift.Int32
+}
+public struct ConvivaReplayCompressionLevel : Swift.RawRepresentable, Swift.Sendable {
+  public let rawValue: Swift.Int32
+  public static let noCompression: ConvivaReplay.ConvivaReplayCompressionLevel
+  public static let bestSpeed: ConvivaReplay.ConvivaReplayCompressionLevel
+  public static let bestCompression: ConvivaReplay.ConvivaReplayCompressionLevel
+  public static let defaultCompression: ConvivaReplay.ConvivaReplayCompressionLevel
+  public init(rawValue: Swift.Int32)
+  public init(_ rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+}
+public struct ConvivaReplayGzipError : Swift.Error, Swift.Sendable {
+  public enum Kind : Swift.Equatable, Swift.Sendable {
+    case stream
+    case data
+    case memory
+    case buffer
+    case version
+    case unknown(code: Swift.Int)
+    public static func == (a: ConvivaReplay.ConvivaReplayGzipError.Kind, b: ConvivaReplay.ConvivaReplayGzipError.Kind) -> Swift.Bool
+  }
+  public let kind: ConvivaReplay.ConvivaReplayGzipError.Kind
+  public let message: Swift.String
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+public func dateToMillis(_ date: Foundation.Date) -> Swift.Int64
+public func toISO8601String(_ date: Foundation.Date) -> Swift.String
+public func toISO8601Date(_ date: Swift.String) -> Foundation.Date?
+public func sanitizeDictionary(_ dict: [Swift.String : Any]?) -> [Swift.String : Any]?
+public func deleteSafely(_ file: Foundation.URL)
+extension UIKit.UIColor {
+  convenience public init(hex: Swift.String?)
+  public func hexDescription(_ includeAlpha: Swift.Bool = false) -> Swift.String
+}
+public func imageToBase64(_ image: UIKit.UIImage, _ compressionQuality: CoreFoundation.CGFloat = 0.3) -> Swift.String?
+extension UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var convivaReplayLabel: Swift.String? {
+    get
+    set
+  }
+}
+extension Foundation.URLSession {
+  public func convivaReplayData(for request: Foundation.URLRequest, convivaReplay: ConvivaReplay.ConvivaReplayPHSDK? = nil) async throws -> (Foundation.Data, Foundation.URLResponse)
+  public func convivaReplayData(from url: Foundation.URL, convivaReplay: ConvivaReplay.ConvivaReplayPHSDK? = nil) async throws -> (Foundation.Data, Foundation.URLResponse)
+  public func convivaReplayUpload(for request: Foundation.URLRequest, fromFile fileURL: Foundation.URL, convivaReplay: ConvivaReplay.ConvivaReplayPHSDK? = nil) async throws -> (Foundation.Data, Foundation.URLResponse)
+  public func convivaReplayUpload(for request: Foundation.URLRequest, from bodyData: Foundation.Data, convivaReplay: ConvivaReplay.ConvivaReplayPHSDK? = nil) async throws -> (Foundation.Data, Foundation.URLResponse)
+  @available(iOS 15.0, *)
+  public func convivaReplayData(for request: Foundation.URLRequest, delegate: (any Foundation.URLSessionTaskDelegate)? = nil, convivaReplay: ConvivaReplay.ConvivaReplayPHSDK? = nil) async throws -> (Foundation.Data, Foundation.URLResponse)
+  @available(iOS 15.0, *)
+  public func convivaReplayData(from url: Foundation.URL, delegate: (any Foundation.URLSessionTaskDelegate)? = nil, convivaReplay: ConvivaReplay.ConvivaReplayPHSDK? = nil) async throws -> (Foundation.Data, Foundation.URLResponse)
+  @available(iOS 15.0, *)
+  public func convivaReplayUpload(for request: Foundation.URLRequest, fromFile fileURL: Foundation.URL, delegate: (any Foundation.URLSessionTaskDelegate)? = nil, convivaReplay: ConvivaReplay.ConvivaReplayPHSDK? = nil) async throws -> (Foundation.Data, Foundation.URLResponse)
+  @available(iOS 15.0, *)
+  public func convivaReplayUpload(for request: Foundation.URLRequest, from bodyData: Foundation.Data, delegate: (any Foundation.URLSessionTaskDelegate)? = nil, convivaReplay: ConvivaReplay.ConvivaReplayPHSDK? = nil) async throws -> (Foundation.Data, Foundation.URLResponse)
+  @available(iOS 15.0, *)
+  public func convivaReplayDownload(for request: Foundation.URLRequest, delegate: (any Foundation.URLSessionTaskDelegate)? = nil, convivaReplay: ConvivaReplay.ConvivaReplayPHSDK? = nil) async throws -> (Foundation.URL, Foundation.URLResponse)
+  @available(iOS 15.0, *)
+  public func convivaReplayDownload(from url: Foundation.URL, delegate: (any Foundation.URLSessionTaskDelegate)? = nil, convivaReplay: ConvivaReplay.ConvivaReplayPHSDK? = nil) async throws -> (Foundation.URL, Foundation.URLResponse)
+  @available(iOS 15.0, *)
+  public func convivaReplayDownload(resumeFrom resumeData: Foundation.Data, delegate: (any Foundation.URLSessionTaskDelegate)? = nil, convivaReplay: ConvivaReplay.ConvivaReplayPHSDK? = nil) async throws -> (Foundation.URL, Foundation.URLResponse)
+}
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func convivaReplayLabel(_ label: Swift.String?) -> some SwiftUICore.View
+  
+}
+extension ConvivaReplay.ConvivaReplayQuality : Swift.Equatable {}
+extension ConvivaReplay.ConvivaReplayQuality : Swift.Hashable {}
+extension ConvivaReplay.ConvivaReplayQuality : Swift.RawRepresentable {}
+extension ConvivaReplay.ConvivaReplayConfig.EmitterConfiguration.DataMode : Swift.Equatable {}
+extension ConvivaReplay.ConvivaReplayConfig.EmitterConfiguration.DataMode : Swift.Hashable {}
+extension ConvivaReplay.ConvivaReplayConfig.EmitterConfiguration.DataMode : Swift.RawRepresentable {}
+extension ConvivaReplay.ConvivaReplayDisplaySurveyRatingType : Swift.Equatable {}
+extension ConvivaReplay.ConvivaReplayDisplaySurveyRatingType : Swift.Hashable {}
+extension ConvivaReplay.ConvivaReplayDisplaySurveyRatingType : Swift.RawRepresentable {}
+extension ConvivaReplay.ConvivaReplayDisplaySurveyTextContentType : Swift.Equatable {}
+extension ConvivaReplay.ConvivaReplayDisplaySurveyTextContentType : Swift.Hashable {}
+extension ConvivaReplay.ConvivaReplayDisplaySurveyTextContentType : Swift.RawRepresentable {}
+extension ConvivaReplay.ConvivaReplayLogLevel : Swift.Equatable {}
+extension ConvivaReplay.ConvivaReplayLogLevel : Swift.Hashable {}
+extension ConvivaReplay.ConvivaReplayLogLevel : Swift.RawRepresentable {}
+extension ConvivaReplay.ConvivaReplayPersonProfiles : Swift.Equatable {}
+extension ConvivaReplay.ConvivaReplayPersonProfiles : Swift.Hashable {}
+extension ConvivaReplay.ConvivaReplayPersonProfiles : Swift.RawRepresentable {}
+extension ConvivaReplay.ConvivaReplayPHConfig.ConvivaReplayDataMode : Swift.Equatable {}
+extension ConvivaReplay.ConvivaReplayPHConfig.ConvivaReplayDataMode : Swift.Hashable {}
+extension ConvivaReplay.ConvivaReplayPHConfig.ConvivaReplayDataMode : Swift.RawRepresentable {}
+@available(*, unavailable, renamed: "Connection")
+extension ConvivaReplay.ConvivaReplayReachability.NetworkStatus : Swift.Equatable {}
+@available(*, unavailable, renamed: "Connection")
+extension ConvivaReplay.ConvivaReplayReachability.NetworkStatus : Swift.Hashable {}
+extension ConvivaReplay.ConvivaReplayReachability.Connection : Swift.Equatable {}
+extension ConvivaReplay.ConvivaReplayReachability.Connection : Swift.Hashable {}
+extension ConvivaReplay.ConvivaReplaySurveyResponseType : Swift.Equatable {}
+extension ConvivaReplay.ConvivaReplaySurveyResponseType : Swift.Hashable {}
+extension ConvivaReplay.ConvivaReplaySurveyResponseType : Swift.RawRepresentable {}
