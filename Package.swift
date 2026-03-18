@@ -19,7 +19,6 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ConvivaReplay",
-            url: "https://github.com/Conviva/conviva-ios-replay/raw/0.0.1/Framework/ConvivaReplay.xcframework.zip",
-            checksum: "490ea450a9c9eee6f64de57bc12cf8dc034286e8d9ecca3627e3d4954a9b753a"),
+            path: "Framework/ConvivaReplay.xcframework.zip"
     ]
 )
