@@ -6,11 +6,11 @@
 	<dict>
 		<key>ios-arm64/ConvivaReplay.framework/ConvivaReplay</key>
 		<data>
-		ggedes84Iik9KFQTWTaL3Zk3owM=
+		zmpAs5rKblpOYdK0sGB3Iu8P3i4=
 		</data>
 		<key>ios-arm64/ConvivaReplay.framework/Headers/ConvivaReplay-Swift.h</key>
 		<data>
-		QZnlqYgVkSJeFfFzeey7XYjlKnE=
+		kZaq/sIkg3/7z4N6Cy+FBGwuOxQ=
 		</data>
 		<key>ios-arm64/ConvivaReplay.framework/Headers/ConvivaReplay-umbrella.h</key>
 		<data>
@@ -198,23 +198,23 @@
 		</data>
 		<key>ios-arm64/ConvivaReplay.framework/Info.plist</key>
 		<data>
-		vHjgHOleQLgDyltZd/aDUfrX1G0=
+		FuvnON2HCpXPAezp+FAvDT72gQE=
 		</data>
 		<key>ios-arm64/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		xObvPaAi9kXD2mMnHioKhjVoyww=
+		LqBNcLp3uWehXGgtFDS4+Zx3XUY=
 		</data>
 		<key>ios-arm64/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		tPu4QPTb9enRGiWtJ/72CCQmgyw=
+		s1mAvWxZzt/oItYygSUlMVqloYE=
 		</data>
 		<key>ios-arm64/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		N3UGnDtQUeCIubuR8O1W1sk+tB0=
+		OZTnKbdfQ3t4Z7nBQ986sXiMhe0=
 		</data>
 		<key>ios-arm64/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		tPu4QPTb9enRGiWtJ/72CCQmgyw=
+		s1mAvWxZzt/oItYygSUlMVqloYE=
 		</data>
 		<key>ios-arm64/ConvivaReplay.framework/Modules/module.modulemap</key>
 		<data>
@@ -226,11 +226,11 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/ConvivaReplay</key>
 		<data>
-		14g2rMXteF7fs0OUnLFOfE89mBI=
+		6CpryOuKDHxMQhSOa0hVC+OKfBM=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Headers/ConvivaReplay-Swift.h</key>
 		<data>
-		B/WNGSUa17P4EhXANWJBl7bUQbA=
+		eCrDutKmO7HgeMYyij/mRduUR4g=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Headers/ConvivaReplay-umbrella.h</key>
 		<data>
@@ -418,35 +418,35 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
 		<data>
-		QAPS6hQRod+v7RFfvI5pQOLOPM8=
+		PWTgvPPRaVmDmDlvv97p26oE2Nw=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<data>
-		ys5V/6Q73o/ZrNM4+BJA8Vex8Hg=
+		vcczgHnmtW6nxcLM5nj5Wo7ZepY=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
 		<data>
-		wE1LPOuPqjD+zjXYJRhdQ2Q9P7E=
+		RBC9qgcz6ZzNPIZ+SCD8e07FQWM=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios-macabi.swiftinterface</key>
 		<data>
-		ys5V/6Q73o/ZrNM4+BJA8Vex8Hg=
+		vcczgHnmtW6nxcLM5nj5Wo7ZepY=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Modules/ConvivaReplay.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<data>
-		QAPS6hQRod+v7RFfvI5pQOLOPM8=
+		PWTgvPPRaVmDmDlvv97p26oE2Nw=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Modules/ConvivaReplay.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<data>
-		ezeqjVL0jhIE9mLjlldf/gleVdU=
+		pOthz+yLYHU+YcMtBKv1sZHpyJc=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Modules/ConvivaReplay.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<data>
-		8WXPY++iQeOxoaKnut5WBKwFpf8=
+		ir4mtty1m2y1zYYu8obS1xrnBuE=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Modules/ConvivaReplay.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<data>
-		ezeqjVL0jhIE9mLjlldf/gleVdU=
+		pOthz+yLYHU+YcMtBKv1sZHpyJc=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Modules/module.modulemap</key>
 		<data>
@@ -454,7 +454,7 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Resources/Info.plist</key>
 		<data>
-		1A8EXMEG+O4+EAZPczkM+qptmck=
+		M2j5nINIKEO2yoPIEq75j396nHo=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Resources/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -462,11 +462,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/ConvivaReplay</key>
 		<data>
-		BiNMV3D2be3+0J4ITiZBfSM4l8k=
+		dV1XJtUZtt7YoiVALIciI4aiHho=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Headers/ConvivaReplay-Swift.h</key>
 		<data>
-		B/WNGSUa17P4EhXANWJBl7bUQbA=
+		eCrDutKmO7HgeMYyij/mRduUR4g=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Headers/ConvivaReplay-umbrella.h</key>
 		<data>
@@ -654,39 +654,39 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Info.plist</key>
 		<data>
-		1R92zSzDbQggsMnDyCCFV81h85U=
+		mNnAtW6YzBTgCeXzmJ77z9lcFnc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		0WmsU7VzDpiKGcS8NJsiglYd+Is=
+		eR+MbM68DPvH3U15X/MUBIoUBkA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		98TiWvNn2mpXphfhWBAZXAjaiZ4=
+		ClyD0Yb9xSr//umbGJa5EEJXJTE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		oTPST+eFVbKnLWo3AHaovs9tjb0=
+		A/t8cT11l0b6YmUTMpgBmPVn9ps=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		98TiWvNn2mpXphfhWBAZXAjaiZ4=
+		ClyD0Yb9xSr//umbGJa5EEJXJTE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		0WmsU7VzDpiKGcS8NJsiglYd+Is=
+		eR+MbM68DPvH3U15X/MUBIoUBkA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ieXl3aKm6nxuTntdYEmd+jBtJno=
+		PEtbkAZ2tsxl8BUv41uxZzddgdo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		9endtbEwqRJB+zeY/YWZhUEHcP0=
+		vUyLRGy1UctQa/QZQLigwSqLQ2Y=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ieXl3aKm6nxuTntdYEmd+jBtJno=
+		PEtbkAZ2tsxl8BUv41uxZzddgdo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Modules/module.modulemap</key>
 		<data>
@@ -698,7 +698,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		9zH8BQCr7ywcuYRZuE2ASIbA8BA=
+		Pa6sz8+w/BDrtChOJiDB5qhcbco=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -706,11 +706,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		gUemFocwflLPDTWgqRAyH3iaSkM=
+		Fd1BldmddXKSX+qT/8EaxzLBsrs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/_CodeSignature/CodeResources</key>
 		<data>
-		kG0fQoU8OFx0OyL3Egtf3TjgxkI=
+		/uaTgPHBh3pVfrcBdeBowRjM7OY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/_CodeSignature/CodeSignature</key>
 		<data>
@@ -723,22 +723,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ggedes84Iik9KFQTWTaL3Zk3owM=
+			zmpAs5rKblpOYdK0sGB3Iu8P3i4=
 			</data>
 			<key>hash2</key>
 			<data>
-			V6rJgRs+2C4uQ0sN8EI4PByG+wfairb8y99N51iogVs=
+			xGVWMTUCUszwH+H9L061AdarPAWl+3+tvIJpa7v7Jek=
 			</data>
 		</dict>
 		<key>ios-arm64/ConvivaReplay.framework/Headers/ConvivaReplay-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QZnlqYgVkSJeFfFzeey7XYjlKnE=
+			kZaq/sIkg3/7z4N6Cy+FBGwuOxQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			du/8GiYcAJ2DatFRgzhXFEXmLHvKjG8Vk5p9yGTgBvE=
+			8axK87XfaHUMfKzAfpXu0Eq+cbmxd67w4l18wto7Y8o=
 			</data>
 		</dict>
 		<key>ios-arm64/ConvivaReplay.framework/Headers/ConvivaReplay-umbrella.h</key>
@@ -1251,55 +1251,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vHjgHOleQLgDyltZd/aDUfrX1G0=
+			FuvnON2HCpXPAezp+FAvDT72gQE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Pkufg1uu1MGkvc5NV3n4z6vHA/1dG0rlDw559aJmeds=
+			3UW7eY94yKG42UG0iYozz1IKIm6MpwVLVzSr7kITZI8=
 			</data>
 		</dict>
 		<key>ios-arm64/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xObvPaAi9kXD2mMnHioKhjVoyww=
+			LqBNcLp3uWehXGgtFDS4+Zx3XUY=
 			</data>
 			<key>hash2</key>
 			<data>
-			GbqKN3fr8fgJDBFB1xGH3+N4/i9G2mRYj1t2BgRg3E0=
+			UiS2bNesskGZ5Pre3DOBMeiyhxx8t4GC70cZpUKsurA=
 			</data>
 		</dict>
 		<key>ios-arm64/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tPu4QPTb9enRGiWtJ/72CCQmgyw=
+			s1mAvWxZzt/oItYygSUlMVqloYE=
 			</data>
 			<key>hash2</key>
 			<data>
-			SpUxVVwNbluUNtsMOoPb80jSKDIpXMnpIEJtQ1uwKHo=
+			Kkhaue4wmQQBOmFhYNuG3dNwauKQDWX69sSa64W6UOw=
 			</data>
 		</dict>
 		<key>ios-arm64/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			N3UGnDtQUeCIubuR8O1W1sk+tB0=
+			OZTnKbdfQ3t4Z7nBQ986sXiMhe0=
 			</data>
 			<key>hash2</key>
 			<data>
-			s/RKxWKTfVzvaHBZRE48KElaXYjQXCeMmv2z/Bd9UNE=
+			LGsF2+Wzu30ipyYsLaNpi3WoiwdjgwgBaE6plW8Rh4A=
 			</data>
 		</dict>
 		<key>ios-arm64/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tPu4QPTb9enRGiWtJ/72CCQmgyw=
+			s1mAvWxZzt/oItYygSUlMVqloYE=
 			</data>
 			<key>hash2</key>
 			<data>
-			SpUxVVwNbluUNtsMOoPb80jSKDIpXMnpIEJtQ1uwKHo=
+			Kkhaue4wmQQBOmFhYNuG3dNwauKQDWX69sSa64W6UOw=
 			</data>
 		</dict>
 		<key>ios-arm64/ConvivaReplay.framework/Modules/module.modulemap</key>
@@ -1348,22 +1348,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			14g2rMXteF7fs0OUnLFOfE89mBI=
+			6CpryOuKDHxMQhSOa0hVC+OKfBM=
 			</data>
 			<key>hash2</key>
 			<data>
-			kmh1kZAGidm2Bq3zVyNQpERTe+oBHTBcNQSZq9uIDII=
+			RpCO++juq85crEJmRn5JrHFxfI2GcqUzKkTnYg54n20=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Headers/ConvivaReplay-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			B/WNGSUa17P4EhXANWJBl7bUQbA=
+			eCrDutKmO7HgeMYyij/mRduUR4g=
 			</data>
 			<key>hash2</key>
 			<data>
-			5lSRY05NwJDMni3hypKeQZLKclXen/UYXLhx8/M3S4Q=
+			mj3NJoVYAQlHIbBxVq8vgurtmA9Y13AkZPT93BVwSYE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Headers/ConvivaReplay-umbrella.h</key>
@@ -1876,88 +1876,88 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QAPS6hQRod+v7RFfvI5pQOLOPM8=
+			PWTgvPPRaVmDmDlvv97p26oE2Nw=
 			</data>
 			<key>hash2</key>
 			<data>
-			0PXE3rpA3TdFJZk0PdH6uSFyAnLLqPMUE+Fp8u1S3Rk=
+			QRS/QvPNF1Aefg3QIsFM/OOlxIrqZzO+9v4hRNJsbuw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ys5V/6Q73o/ZrNM4+BJA8Vex8Hg=
+			vcczgHnmtW6nxcLM5nj5Wo7ZepY=
 			</data>
 			<key>hash2</key>
 			<data>
-			4CVHhTvxd+4ZyHo95xDgsNbmNIMcAFYKydo85PzXtpQ=
+			GNgqaAMptg7OEOyoln3ig0PDB22ssHSxOIo08wFbAlI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wE1LPOuPqjD+zjXYJRhdQ2Q9P7E=
+			RBC9qgcz6ZzNPIZ+SCD8e07FQWM=
 			</data>
 			<key>hash2</key>
 			<data>
-			GhQJXSNKV5gbsYpWZfUa/axzxLTP+SwZ9+t490O2TdI=
+			NgrFXcYVrBnRh0AELGOAgiS2oI+0LIXXepyfwCivOZg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ys5V/6Q73o/ZrNM4+BJA8Vex8Hg=
+			vcczgHnmtW6nxcLM5nj5Wo7ZepY=
 			</data>
 			<key>hash2</key>
 			<data>
-			4CVHhTvxd+4ZyHo95xDgsNbmNIMcAFYKydo85PzXtpQ=
+			GNgqaAMptg7OEOyoln3ig0PDB22ssHSxOIo08wFbAlI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Modules/ConvivaReplay.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QAPS6hQRod+v7RFfvI5pQOLOPM8=
+			PWTgvPPRaVmDmDlvv97p26oE2Nw=
 			</data>
 			<key>hash2</key>
 			<data>
-			0PXE3rpA3TdFJZk0PdH6uSFyAnLLqPMUE+Fp8u1S3Rk=
+			QRS/QvPNF1Aefg3QIsFM/OOlxIrqZzO+9v4hRNJsbuw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Modules/ConvivaReplay.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ezeqjVL0jhIE9mLjlldf/gleVdU=
+			pOthz+yLYHU+YcMtBKv1sZHpyJc=
 			</data>
 			<key>hash2</key>
 			<data>
-			nCkjMjzCYuJ+aXqT67Zi6gEW+wnGl39fuXdIOSjCMaA=
+			XY1vXmx4RfMbUGkrv479i/fvLKA4kiTj7faQtDnrkL0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Modules/ConvivaReplay.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8WXPY++iQeOxoaKnut5WBKwFpf8=
+			ir4mtty1m2y1zYYu8obS1xrnBuE=
 			</data>
 			<key>hash2</key>
 			<data>
-			QSjZkgl+OjMULk8XupeRmoQjDcmLbdRvhk6O/QGIPuQ=
+			EUbZDbEDf8LsV35ICH9tkyG/fUYAQIV8LnTshIej4yU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Modules/ConvivaReplay.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ezeqjVL0jhIE9mLjlldf/gleVdU=
+			pOthz+yLYHU+YcMtBKv1sZHpyJc=
 			</data>
 			<key>hash2</key>
 			<data>
-			nCkjMjzCYuJ+aXqT67Zi6gEW+wnGl39fuXdIOSjCMaA=
+			XY1vXmx4RfMbUGkrv479i/fvLKA4kiTj7faQtDnrkL0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Modules/module.modulemap</key>
@@ -1975,11 +1975,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1A8EXMEG+O4+EAZPczkM+qptmck=
+			M2j5nINIKEO2yoPIEq75j396nHo=
 			</data>
 			<key>hash2</key>
 			<data>
-			qAcLeUsGmPRfq7RRL5/ArDtilaKYEmsk8djxyaYe6dI=
+			pb+E1daWckXZTuWdBoIGZMzrijl5+oonDhDtj9L1dcI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/ConvivaReplay.framework/Versions/A/Resources/PrivacyInfo.xcprivacy</key>
@@ -2002,22 +2002,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BiNMV3D2be3+0J4ITiZBfSM4l8k=
+			dV1XJtUZtt7YoiVALIciI4aiHho=
 			</data>
 			<key>hash2</key>
 			<data>
-			RWT+77geL5z5/CYzBbkpPtCHqEjAwbJRf9JErAz9jJo=
+			NleuT09qbPDrR9JroF6xjabfgDmcLx7oc6BkCAIeGYw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Headers/ConvivaReplay-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			B/WNGSUa17P4EhXANWJBl7bUQbA=
+			eCrDutKmO7HgeMYyij/mRduUR4g=
 			</data>
 			<key>hash2</key>
 			<data>
-			5lSRY05NwJDMni3hypKeQZLKclXen/UYXLhx8/M3S4Q=
+			mj3NJoVYAQlHIbBxVq8vgurtmA9Y13AkZPT93BVwSYE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Headers/ConvivaReplay-umbrella.h</key>
@@ -2530,99 +2530,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1R92zSzDbQggsMnDyCCFV81h85U=
+			mNnAtW6YzBTgCeXzmJ77z9lcFnc=
 			</data>
 			<key>hash2</key>
 			<data>
-			cgKHgMTaEj0/DDZ/d+alyjqX/zqqF+VO/FHb9zqGBZg=
+			4ffPYJut6CHVqYEhCV5Pe9ofoeIxtN4bByJr5F6g3c4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0WmsU7VzDpiKGcS8NJsiglYd+Is=
+			eR+MbM68DPvH3U15X/MUBIoUBkA=
 			</data>
 			<key>hash2</key>
 			<data>
-			tMQZwJLHr9AI/53gG4vK8j3aIpXnSQerCKztm+JGSco=
+			A5B4Dd2uvDgcR2UEHhPMYNrPCHJmwPZYY2vnvI1JVz0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			98TiWvNn2mpXphfhWBAZXAjaiZ4=
+			ClyD0Yb9xSr//umbGJa5EEJXJTE=
 			</data>
 			<key>hash2</key>
 			<data>
-			o8E1GR7m0XpHfXeXnq7tNtHx09BBs08GGfMt0R/orFU=
+			6QEc35PhBhzY6/PQwxLFJlpKCNfMHcezqQGxTYImSOM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oTPST+eFVbKnLWo3AHaovs9tjb0=
+			A/t8cT11l0b6YmUTMpgBmPVn9ps=
 			</data>
 			<key>hash2</key>
 			<data>
-			GIASnhQV6iP439L7EWUfx3KI++c6VHQPUEnnJWQUZ7g=
+			Tb43hkvbYmCdcauvyZAecs842Ne4+gNI2IufpFPbdKE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			98TiWvNn2mpXphfhWBAZXAjaiZ4=
+			ClyD0Yb9xSr//umbGJa5EEJXJTE=
 			</data>
 			<key>hash2</key>
 			<data>
-			o8E1GR7m0XpHfXeXnq7tNtHx09BBs08GGfMt0R/orFU=
+			6QEc35PhBhzY6/PQwxLFJlpKCNfMHcezqQGxTYImSOM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0WmsU7VzDpiKGcS8NJsiglYd+Is=
+			eR+MbM68DPvH3U15X/MUBIoUBkA=
 			</data>
 			<key>hash2</key>
 			<data>
-			tMQZwJLHr9AI/53gG4vK8j3aIpXnSQerCKztm+JGSco=
+			A5B4Dd2uvDgcR2UEHhPMYNrPCHJmwPZYY2vnvI1JVz0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ieXl3aKm6nxuTntdYEmd+jBtJno=
+			PEtbkAZ2tsxl8BUv41uxZzddgdo=
 			</data>
 			<key>hash2</key>
 			<data>
-			BFFNEZK7xhNgXj6O5CWXCuzUwhfkA+VVY4PbVtNQvwc=
+			mt7KOpId/KoO235Xpj0ZaY65E/ND+x00SV2luS72TUI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9endtbEwqRJB+zeY/YWZhUEHcP0=
+			vUyLRGy1UctQa/QZQLigwSqLQ2Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			oV2elR9Q1sRpObnk+5N7PI72BFipj3ILEMQ2LqJOY78=
+			f1eZiVTOK6lIjMbyvKL+DrC3ZJldbthUhGWeD338reE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Modules/ConvivaReplay.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ieXl3aKm6nxuTntdYEmd+jBtJno=
+			PEtbkAZ2tsxl8BUv41uxZzddgdo=
 			</data>
 			<key>hash2</key>
 			<data>
-			BFFNEZK7xhNgXj6O5CWXCuzUwhfkA+VVY4PbVtNQvwc=
+			mt7KOpId/KoO235Xpj0ZaY65E/ND+x00SV2luS72TUI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/Modules/module.modulemap</key>
@@ -2651,11 +2651,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9zH8BQCr7ywcuYRZuE2ASIbA8BA=
+			Pa6sz8+w/BDrtChOJiDB5qhcbco=
 			</data>
 			<key>hash2</key>
 			<data>
-			e6QDYBmze7j1spv7gZ1SmxiJ1t02n8+mc9QTgTZd5L4=
+			GBoTQQ1FmFjPn+bQ7dbVV4sHps4mLJYL0LGYpBs60+s=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/_CodeSignature/CodeRequirements</key>
@@ -2673,22 +2673,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gUemFocwflLPDTWgqRAyH3iaSkM=
+			Fd1BldmddXKSX+qT/8EaxzLBsrs=
 			</data>
 			<key>hash2</key>
 			<data>
-			pN5vnBP1iK+RK+p9ERhBmI1JgX5ec5Ax2ZXeMhLX1+Y=
+			R81mxukuBUME3ewQDOjv6jEfTKp8FLNf+XewX5BxxAM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kG0fQoU8OFx0OyL3Egtf3TjgxkI=
+			/uaTgPHBh3pVfrcBdeBowRjM7OY=
 			</data>
 			<key>hash2</key>
 			<data>
-			h9U/C9W5pID1lTlmTtqPerYAEyZvn759xj5KHijDMfQ=
+			opbMUAIDRAeDbh7/g5yoyB6JiPcG25Sgmu9orrp4CMM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ConvivaReplay.framework/_CodeSignature/CodeSignature</key>

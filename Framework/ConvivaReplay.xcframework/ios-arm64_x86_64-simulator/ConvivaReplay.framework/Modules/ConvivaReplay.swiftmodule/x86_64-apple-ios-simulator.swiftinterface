@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
 // swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ConvivaReplay
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import Accelerate
 @_exported import ConvivaReplay
 import CoreGraphics
@@ -67,11 +67,12 @@ public struct ConvivaReplayConfig {
     public var compressionQuality: Swift.Int
     public var quality: ConvivaReplay.ConvivaReplayQuality
     public var maskAllInputs: Swift.Bool
+    public var maskAllTextInputs: Swift.Bool
     public var maskInputOptions: [Swift.String]
     public var maskAllImages: Swift.Bool
     public var maskSandboxedSystemViews: Swift.Bool
     public var useFastRenderer: Swift.Bool
-    public init(throttleDelayMs: Swift.Int = 1000, compressionQuality: Swift.Int = 10, quality: ConvivaReplay.ConvivaReplayQuality = .medium, maskAllInputs: Swift.Bool = true, maskInputOptions: [Swift.String] = [
+    public init(throttleDelayMs: Swift.Int = 1000, compressionQuality: Swift.Int = 10, quality: ConvivaReplay.ConvivaReplayQuality = .medium, maskAllInputs: Swift.Bool = true, maskAllTextInputs: Swift.Bool = true, maskInputOptions: [Swift.String] = [
                 "newPassword", "oneTimeCode", "creditCardNumber",
                 "telephoneNumber", "emailAddress", "password",
                 "username", "URL", "name", "nickname",
@@ -83,6 +84,10 @@ public struct ConvivaReplayConfig {
                 ], maskAllImages: Swift.Bool = true, maskSandboxedSystemViews: Swift.Bool = true, useFastRenderer: Swift.Bool = false)
   }
   public var mobRecorderConfiguration: ConvivaReplay.ConvivaReplayConfig.MobRecorderConfiguration
+  public var maskAllInputs: Swift.Bool {
+    get
+    set
+  }
   public var maskAllTextInputs: Swift.Bool {
     get
     set
@@ -462,6 +467,7 @@ public class ConvivaReplayReachability {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(ConvivaReplaySessionReplayConfig) public class ConvivaReplaySessionReplayConfig : ObjectiveC.NSObject {
+  @objc public var maskAllInputs: Swift.Bool
   @objc public var maskAllTextInputs: Swift.Bool
   @objc public var maskAllImages: Swift.Bool
   @objc public var maskAllSandboxedViews: Swift.Bool

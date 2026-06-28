@@ -2479,6 +2479,92 @@
               },
               {
                 "kind": "Var",
+                "name": "maskAllTextInputs",
+                "printedName": "maskAllTextInputs",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13ConvivaReplay0aB6ConfigV24MobRecorderConfigurationV17maskAllTextInputsSbvp",
+                "mangledName": "$s13ConvivaReplay0aB6ConfigV24MobRecorderConfigurationV17maskAllTextInputsSbvp",
+                "moduleName": "ConvivaReplay",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13ConvivaReplay0aB6ConfigV24MobRecorderConfigurationV17maskAllTextInputsSbvg",
+                    "mangledName": "$s13ConvivaReplay0aB6ConfigV24MobRecorderConfigurationV17maskAllTextInputsSbvg",
+                    "moduleName": "ConvivaReplay",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13ConvivaReplay0aB6ConfigV24MobRecorderConfigurationV17maskAllTextInputsSbvs",
+                    "mangledName": "$s13ConvivaReplay0aB6ConfigV24MobRecorderConfigurationV17maskAllTextInputsSbvs",
+                    "moduleName": "ConvivaReplay",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13ConvivaReplay0aB6ConfigV24MobRecorderConfigurationV17maskAllTextInputsSbvM",
+                    "mangledName": "$s13ConvivaReplay0aB6ConfigV24MobRecorderConfigurationV17maskAllTextInputsSbvM",
+                    "moduleName": "ConvivaReplay",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
                 "name": "maskInputOptions",
                 "printedName": "maskInputOptions",
                 "children": [
@@ -2845,7 +2931,7 @@
               {
                 "kind": "Constructor",
                 "name": "init",
-                "printedName": "init(throttleDelayMs:compressionQuality:quality:maskAllInputs:maskInputOptions:maskAllImages:maskSandboxedSystemViews:useFastRenderer:)",
+                "printedName": "init(throttleDelayMs:compressionQuality:quality:maskAllInputs:maskAllTextInputs:maskInputOptions:maskAllImages:maskSandboxedSystemViews:useFastRenderer:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -2873,6 +2959,13 @@
                     "printedName": "ConvivaReplay.ConvivaReplayQuality",
                     "hasDefaultArg": true,
                     "usr": "c:@M@ConvivaReplay@E@ConvivaReplayQuality"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "hasDefaultArg": true,
+                    "usr": "s:Sb"
                   },
                   {
                     "kind": "TypeNominal",
@@ -2919,8 +3012,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:13ConvivaReplay0aB6ConfigV24MobRecorderConfigurationV15throttleDelayMs18compressionQuality7quality13maskAllInputs0M12InputOptions0mN6Images0M20SandboxedSystemViews15useFastRendererAESi_SiAA0abK0OSbSaySSGS3btcfc",
-                "mangledName": "$s13ConvivaReplay0aB6ConfigV24MobRecorderConfigurationV15throttleDelayMs18compressionQuality7quality13maskAllInputs0M12InputOptions0mN6Images0M20SandboxedSystemViews15useFastRendererAESi_SiAA0abK0OSbSaySSGS3btcfc",
+                "usr": "s:13ConvivaReplay0aB6ConfigV24MobRecorderConfigurationV15throttleDelayMs18compressionQuality7quality13maskAllInputs0mn4TextO00M12InputOptions0mN6Images0M20SandboxedSystemViews15useFastRendererAESi_SiAA0abK0OS2bSaySSGS3btcfc",
+                "mangledName": "$s13ConvivaReplay0aB6ConfigV24MobRecorderConfigurationV15throttleDelayMs18compressionQuality7quality13maskAllInputs0mn4TextO00M12InputOptions0mN6Images0M20SandboxedSystemViews15useFastRendererAESi_SiAA0abK0OS2bSaySSGS3btcfc",
                 "moduleName": "ConvivaReplay",
                 "declAttributes": [
                   "AccessControl"
@@ -3039,6 +3132,88 @@
           },
           {
             "kind": "Var",
+            "name": "maskAllInputs",
+            "printedName": "maskAllInputs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13ConvivaReplay0aB6ConfigV13maskAllInputsSbvp",
+            "mangledName": "$s13ConvivaReplay0aB6ConfigV13maskAllInputsSbvp",
+            "moduleName": "ConvivaReplay",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13ConvivaReplay0aB6ConfigV13maskAllInputsSbvg",
+                "mangledName": "$s13ConvivaReplay0aB6ConfigV13maskAllInputsSbvg",
+                "moduleName": "ConvivaReplay",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13ConvivaReplay0aB6ConfigV13maskAllInputsSbvs",
+                "mangledName": "$s13ConvivaReplay0aB6ConfigV13maskAllInputsSbvs",
+                "moduleName": "ConvivaReplay",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13ConvivaReplay0aB6ConfigV13maskAllInputsSbvM",
+                "mangledName": "$s13ConvivaReplay0aB6ConfigV13maskAllInputsSbvM",
+                "moduleName": "ConvivaReplay",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "maskAllTextInputs",
             "printedName": "maskAllTextInputs",
             "children": [
@@ -3054,8 +3229,7 @@
             "mangledName": "$s13ConvivaReplay0aB6ConfigV17maskAllTextInputsSbvp",
             "moduleName": "ConvivaReplay",
             "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "accessors": [
               {
@@ -17664,6 +17838,100 @@
         "children": [
           {
             "kind": "Var",
+            "name": "maskAllInputs",
+            "printedName": "maskAllInputs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ConvivaReplay@objc(cs)ConvivaReplaySessionReplayConfig(py)maskAllInputs",
+            "mangledName": "$s13ConvivaReplay0ab7SessionB6ConfigC13maskAllInputsSbvp",
+            "moduleName": "ConvivaReplay",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ConvivaReplay@objc(cs)ConvivaReplaySessionReplayConfig(im)maskAllInputs",
+                "mangledName": "$s13ConvivaReplay0ab7SessionB6ConfigC13maskAllInputsSbvg",
+                "moduleName": "ConvivaReplay",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ConvivaReplay@objc(cs)ConvivaReplaySessionReplayConfig(im)setMaskAllInputs:",
+                "mangledName": "$s13ConvivaReplay0ab7SessionB6ConfigC13maskAllInputsSbvs",
+                "moduleName": "ConvivaReplay",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13ConvivaReplay0ab7SessionB6ConfigC13maskAllInputsSbvM",
+                "mangledName": "$s13ConvivaReplay0ab7SessionB6ConfigC13maskAllInputsSbvM",
+                "moduleName": "ConvivaReplay",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "maskAllTextInputs",
             "printedName": "maskAllTextInputs",
             "children": [
@@ -25220,7 +25488,7 @@
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/ConvivaReplayApi.swift",
       "kind": "StringLiteral",
-      "offset": 14127,
+      "offset": 14243,
       "length": 21,
       "value": "\"Invalid date format\""
     },
@@ -25801,154 +26069,168 @@
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2224,
+      "offset": 2225,
+      "length": 19,
+      "value": "\"maskAllTextInputs\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2287,
       "length": 18,
       "value": "\"maskInputOptions\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2282,
+      "offset": 2345,
       "length": 15,
       "value": "\"maskAllImages\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2348,
+      "offset": 2411,
       "length": 26,
       "value": "\"maskSandboxedSystemViews\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2416,
+      "offset": 2479,
       "length": 17,
       "value": "\"useFastRenderer\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2707,
+      "offset": 2770,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 3772,
+      "offset": 3835,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 3813,
+      "offset": 3876,
       "length": 4,
       "value": "3600"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 3851,
+      "offset": 3914,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 3884,
+      "offset": 3947,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 3921,
+      "offset": 3984,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4886,
+      "offset": 5102,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4930,
+      "offset": 5146,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 5021,
+      "offset": 5237,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5281,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "Array",
-      "offset": 5068,
+      "offset": 5328,
       "length": 503,
       "value": "[\"newPassword\", \"oneTimeCode\", \"creditCardNumber\", \"telephoneNumber\", \"emailAddress\", \"password\", \"username\", \"URL\", \"name\", \"nickname\", \"middleName\", \"familyName\", \"nameSuffix\", \"namePrefix\", \"organizationName\", \"location\", \"fullStreetAddress\", \"streetAddressLine1\", \"streetAddressLine2\", \"addressCity\", \"addressState\", \"addressCityAndState\", \"postalCode\"]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 5607,
+      "offset": 5867,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 5658,
+      "offset": 5918,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 5700,
+      "offset": 5960,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 6966,
+      "offset": 7453,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 7472,
+      "offset": 7959,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 7611,
+      "offset": 8098,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 7692,
+      "offset": 8179,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/conviva\/ConvivaReplayConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 7714,
+      "offset": 8201,
       "length": 4,
       "value": "3600"
     },
@@ -26382,70 +26664,70 @@
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Models\/ConvivaReplayEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2759,
+      "offset": 2775,
       "length": 11,
       "value": "\"$snapshot\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Models\/ConvivaReplayEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2789,
+      "offset": 2805,
       "length": 9,
       "value": "\"$screen\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Models\/ConvivaReplayEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2814,
+      "offset": 2830,
       "length": 6,
       "value": "\"$set\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Models\/ConvivaReplayEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2848,
+      "offset": 2864,
       "length": 18,
       "value": "\"survey dismissed\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Models\/ConvivaReplayEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2889,
+      "offset": 2905,
       "length": 13,
       "value": "\"survey sent\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Models\/ConvivaReplayEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2926,
+      "offset": 2942,
       "length": 14,
       "value": "\"survey shown\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Models\/ConvivaReplayEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2961,
+      "offset": 2977,
       "length": 11,
       "value": "\"$identify\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Models\/ConvivaReplayEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2998,
+      "offset": 3014,
       "length": 16,
       "value": "\"$groupidentify\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Models\/ConvivaReplayEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3038,
+      "offset": 3054,
       "length": 15,
       "value": "\"$create_alias\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Models\/ConvivaReplayEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3083,
+      "offset": 3099,
       "length": 22,
       "value": "\"$feature_flag_called\""
     },
@@ -27271,70 +27553,77 @@
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Replay\/ConvivaReplaySessionReplayConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 386,
+      "offset": 430,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Replay\/ConvivaReplaySessionReplayConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 523,
+      "offset": 747,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Replay\/ConvivaReplaySessionReplayConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 779,
+      "offset": 884,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Replay\/ConvivaReplaySessionReplayConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1276,
+      "offset": 1140,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Replay\/ConvivaReplaySessionReplayConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1637,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Replay\/ConvivaReplaySessionReplayConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1413,
+      "offset": 1774,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Replay\/ConvivaReplaySessionReplayConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1763,
+      "offset": 2124,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Replay\/ConvivaReplaySessionReplayConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2814,
+      "offset": 3175,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Replay\/ConvivaReplaySessionReplayConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 3338,
+      "offset": 3699,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Replay\/ConvivaReplaySessionReplayConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 4310,
+      "offset": 4671,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Replay\/ConvivaReplaySessionReplayConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4368,
+      "offset": 4729,
       "length": 2,
       "value": "10"
     },
@@ -27418,21 +27707,42 @@
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Replay\/ConvivaReplaySessionReplayIntegration.swift",
       "kind": "StringLiteral",
-      "offset": 5644,
+      "offset": 6748,
+      "length": 27,
+      "value": "\"RCTParagraphComponentView\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Replay\/ConvivaReplaySessionReplayIntegration.swift",
+      "kind": "StringLiteral",
+      "offset": 6844,
+      "length": 27,
+      "value": "\"RCTTextInputComponentView\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Replay\/ConvivaReplaySessionReplayIntegration.swift",
+      "kind": "StringLiteral",
+      "offset": 6940,
+      "length": 23,
+      "value": "\"RCTImageComponentView\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Replay\/ConvivaReplaySessionReplayIntegration.swift",
+      "kind": "StringLiteral",
+      "offset": 7142,
       "length": 15,
       "value": "\"_UIRemoteView\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Replay\/ConvivaReplaySessionReplayIntegration.swift",
       "kind": "Array",
-      "offset": 5786,
+      "offset": 7284,
       "length": 260,
       "value": "[\"_TtC7SwiftUIP33_E19F490D25D5E0EC8A24903AF958E34115ColorShapeLayer\", \"SwiftUI.GradientLayer\"]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Replay\/ConvivaReplaySessionReplayIntegration.swift",
       "kind": "StringLiteral",
-      "offset": 6134,
+      "offset": 7632,
       "length": 44,
       "value": "\"com.convivaReplay.ConvivaReplayIntegration\""
     },
@@ -27621,7 +27931,7 @@
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/ConvivaReplayStorage.swift",
       "kind": "BooleanLiteral",
-      "offset": 15373,
+      "offset": 15431,
       "length": 5,
       "value": "false"
     },
@@ -27747,217 +28057,217 @@
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "Dictionary",
-      "offset": 22038,
+      "offset": 22067,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "StringLiteral",
-      "offset": 35344,
+      "offset": 35373,
       "length": 10,
       "value": "\"negative\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "StringLiteral",
-      "offset": 35384,
+      "offset": 35413,
       "length": 9,
       "value": "\"neutral\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "StringLiteral",
-      "offset": 35424,
+      "offset": 35453,
       "length": 10,
       "value": "\"positive\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "StringLiteral",
-      "offset": 35467,
+      "offset": 35496,
       "length": 12,
       "value": "\"detractors\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "StringLiteral",
-      "offset": 35510,
+      "offset": 35539,
       "length": 10,
       "value": "\"passives\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "StringLiteral",
-      "offset": 35552,
+      "offset": 35581,
       "length": 11,
       "value": "\"promoters\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 35626,
+      "offset": 35655,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 35632,
+      "offset": 35661,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 35670,
+      "offset": 35699,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 35676,
+      "offset": 35705,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 35715,
+      "offset": 35744,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 35721,
+      "offset": 35750,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 35758,
+      "offset": 35787,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 35764,
+      "offset": 35793,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 35897,
+      "offset": 35926,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 35903,
+      "offset": 35932,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 35939,
+      "offset": 35968,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 35945,
+      "offset": 35974,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 36031,
+      "offset": 36060,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 36037,
+      "offset": 36066,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 36073,
+      "offset": 36102,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 36079,
+      "offset": 36108,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 36166,
+      "offset": 36195,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 36172,
+      "offset": 36201,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 36208,
+      "offset": 36237,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 36214,
+      "offset": 36243,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 36300,
+      "offset": 36329,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 36306,
+      "offset": 36335,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 36342,
+      "offset": 36371,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Surveys\/ConvivaReplaySurveyIntegration.swift",
       "kind": "IntegerLiteral",
-      "offset": 36348,
+      "offset": 36377,
       "length": 1,
       "value": "8"
     },
@@ -28036,7 +28346,7 @@
       "kind": "StringLiteral",
       "offset": 313,
       "length": 7,
-      "value": "\"0.0.1\""
+      "value": "\"0.0.2\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/ConvivaReplayVersion.swift",
@@ -28209,14 +28519,14 @@
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Replay\/UIView+Util.swift",
       "kind": "BooleanLiteral",
-      "offset": 1107,
+      "offset": 2248,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ConvivaReplay\/Replay\/UIView+Util.swift",
       "kind": "FloatLiteral",
-      "offset": 1141,
+      "offset": 2282,
       "length": 3,
       "value": "1.0"
     },

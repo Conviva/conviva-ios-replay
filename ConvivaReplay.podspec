@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ConvivaReplay"
-s.version='0.0.1'
+s.version='0.0.2'
   s.summary          = "A plugabble sdk for recording user sessions and helps in replaying them in pulse."
   s.description      = <<-DESC
  A plugabble sdk for recording user sessions and helps in replaying them in pulse.
