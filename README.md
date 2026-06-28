@@ -43,7 +43,7 @@ Install the Conviva iOS Replay SDK using one of the following methods:
    - **Cocoapods**
 
      Add the following line to your Podfile, replacing <version> with the latest version:\
-      pod 'ConvivaReplay', :git => 'https://github.com/Conviva/conviva-ios-replay.git', :tag => '0.0.1'
+      pod 'ConvivaReplay', :git => 'https://github.com/Conviva/conviva-ios-replay.git', :tag => '0.0.2'
 
    - **Manual Install**
      
