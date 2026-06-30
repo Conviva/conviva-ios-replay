@@ -1,7 +1,7 @@
 # Changelog
 
 ## 0.0.2 (06/28/2026)
-* Introduces Cohort Replay support for React Native (Beta)
+* Adds React Native Cohort Replay support (Beta), including manual element masking via nativeID="cr-no-capture".
 
 ## 0.0.1 (03/18/2026)
 * Introduces Cohort Replay (Beta)
